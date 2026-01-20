@@ -9,7 +9,11 @@ public class BookingDbContext : DbContext
         : base(options)
     {
     }
-
+    
+    public BookingDbContext()
+    {
+    }
+    
     public System.Data.Entity.DbSet<Room> Rooms { get; set; }
     public System.Data.Entity.DbSet<Entities.Booking> Bookings { get; set; }
 
