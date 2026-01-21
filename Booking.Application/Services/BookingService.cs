@@ -6,8 +6,8 @@ using Microsoft.Extensions.Logging;
 
 namespace Booking.Application.Services;
 
-public class BookingService : IBookingService
-{
+    public class BookingService : IBookingService
+    {
         private readonly IBookingRepository _bookingRepository;
         private readonly IRoomRepository _roomRepository;
         private readonly IMapper _mapper;

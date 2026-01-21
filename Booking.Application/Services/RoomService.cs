@@ -6,8 +6,8 @@ using Microsoft.Extensions.Logging;
 
 namespace Booking.Application.Services;
 
-public class RoomService :IRoomService
-{
+    public class RoomService :IRoomService
+    {
         private readonly IRoomRepository _roomRepository;
         private readonly IMapper _mapper;
         private readonly ILogger<RoomService> _logger;
