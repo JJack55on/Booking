@@ -1,9 +1,11 @@
 using Booking.DataAccess.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Booking.DataAccess.Context;
 
-public class BookingDbContext : DbContext
+public class BookingDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
 {
     public BookingDbContext(DbContextOptions<BookingDbContext> options)
         : base(options)
